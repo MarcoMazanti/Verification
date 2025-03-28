@@ -1,30 +1,32 @@
 package org.example;
 
+import static org.example.Verification.*;
+
 public class Main {
     public static void main(String[] args) {
         System.out.print("byte value: ");
-        byte byteValue = Verification.readObject(Byte.class);
+        byte byteValue = readByte();
 
         System.out.print("short value: ");
-        short shortValue = Verification.readObject(Short.class);
+        short shortValue = readShort();
 
         System.out.print("int value: ");
-        int intValue = Verification.readObject(Integer.class);
+        int intValue = readInt();
 
         System.out.print("long value: ");
-        long longValue = Verification.readObject(Long.class);
+        long longValue = readLong();
 
         System.out.print("float value: ");
-        float floatValue = Verification.readObject(Float.class);
+        float floatValue = readFloat();
 
         System.out.print("double value: ");
-        double doubleValue = Verification.readObject(Double.class);
+        double doubleValue = readDouble();
 
         System.out.print("boolean value: ");
-        boolean booleanValue = Verification.readObject(Boolean.class);
+        boolean booleanValue = readBoolean();
 
         System.out.print("char value: ");
-        char charValue = Verification.readObject(Character.class);
+        char charValue = readChar();
 
         System.out.println(byteValue + " " + shortValue + " " + intValue + " " + longValue + " " +
                 floatValue + " " + doubleValue + " " + booleanValue + " " + charValue);
